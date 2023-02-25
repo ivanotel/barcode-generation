@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Barcode Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.3/dist/jsbarcode.min.js"></script>
+  </head>
+  <body>
+    <h1>Barcode Generator</h1>
+    <label for="barcode-input">Enter barcode data:</label>
+    <input type="text" id="barcode-input">
+    <button onclick="generateBarcode()">Generate Barcode</button>
+    <br><br>
+    <svg id="barcode"></svg>
+    <script>
+      function generateBarcode() {
+        var barcodeData = document.getElementById("barcode-input").value;
+        JsBarcode("#barcode", barcodeData);
+      }
+    </script>
+  </body>
+</html>
