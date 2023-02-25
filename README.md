@@ -1,1 +1,3 @@
 # barcode-generation
+
+This code creates a web page with an input field to enter the barcode data, a button to generate the barcode, and an SVG element to display the barcode. The `JsBarcode` library is included in the page using a script tag, and the `generateBarcode()` function is called when the button is clicked. This function retrieves the barcode data from the input field, and uses the `JsBarcode()` function to generate the barcode and display it in the SVG element with the `id` of "barcode". You can customize the appearance of the barcode using various options and CSS styles provided by the `JsBarcode` library.
